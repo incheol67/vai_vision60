@@ -1,0 +1,33 @@
+# Goal
+uint8 set_mode          # Mode selection: 
+                        # 0: Standby mode
+                        # 1: Return Mode
+                        # 2: Exploration Mode
+                        # 3: Upstairs Mode
+                        # 4: Downstairs Mode
+
+uint32 set_time         # Action termination condition: (seconds)
+
+uint64 set_point_num    # Action termination condition: number of pointclouds
+
+float32 set_distance    # Action termination condition: Exploration radius (m)
+
+---
+# Result
+bool success            # false: failure, true: success
+
+---
+# Feedback
+uint8 current_mode      # Current mode:
+                        # 0: Standby mode
+                        # 1: Return Mode
+                        # 2: Exploration Mode
+                        # 3: Upstairs Mode
+                        # 4: Downstairs Mode
+
+float32 current_x       # Current robot x-coordinate
+float32 current_y       # Current robot y-coordinate
+float32 current_yaw     # Current robot yaw (orientation)
+uint32 current_time     # Execution time
+uint64 current_point_num # Number of pointclouds created
+float32 current_distance # Explored distance

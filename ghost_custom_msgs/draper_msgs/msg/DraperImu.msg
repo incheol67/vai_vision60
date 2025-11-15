@@ -1,0 +1,9 @@
+bool accel_valid
+bool gyro_valid
+bool mag_valid
+bool baro_valid
+float64 tov
+geometry_msgs/Vector3 accel
+geometry_msgs/Vector3 gyro
+geometry_msgs/Vector3 mag
+float64 baro

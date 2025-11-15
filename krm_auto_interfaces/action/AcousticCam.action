@@ -1,0 +1,21 @@
+# Goal
+
+## Yaml 형태로 데이터가 제공될 것임. 수신하는 곳에서 deserialize 해야함.
+## 예제 데이터
+## mission_txt:
+##   mode: 1
+## logging_dir:
+## 예시 : /home/krm/krm_data/logs/{날짜}
+string file_path
+
+---
+# Result
+bool result          # false: failure, true: success 
+
+---
+# Feedback
+## Yaml 형태로 데이터가 제공될 것임. 수신하는 곳에서 deserialize 해야함.
+## 예제 데이터
+## feedback_msgs:
+##   mode: 1
+string feedback_msgs

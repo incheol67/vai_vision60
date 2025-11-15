@@ -1,0 +1,10 @@
+std_msgs/Header header
+string system_status
+string system_error
+string axial_screw_status
+string ortho_screw_status
+string axial_screw_error
+string ortho_screw_error
+float32[4] voltages
+float32 realtime_current
+uint8 voltage_level_bitmap

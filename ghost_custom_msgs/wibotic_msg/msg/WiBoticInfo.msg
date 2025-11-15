@@ -1,0 +1,9 @@
+float32 v_mon_batt
+float32 i_battery
+float32 v_rect
+float32 v_mon_charger
+float32 t_board
+float32 target_i_battery
+float32 i_charger
+uint8   charger_state
+bool node_online

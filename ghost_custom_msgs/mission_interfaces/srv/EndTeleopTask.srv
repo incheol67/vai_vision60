@@ -1,0 +1,5 @@
+# Request
+bool end_task
+---
+# Return Value
+bool success

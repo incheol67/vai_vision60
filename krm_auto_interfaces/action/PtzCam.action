@@ -1,0 +1,44 @@
+# Goal
+
+## Yaml 형태로 데이터가 제공될 것임. 수신하는 곳에서 deserialize 해야함.
+## 예제 데이터
+## mission_txt:
+##   mode: 1
+##   camera_pose:
+##     position:
+##       x: 0.5
+##       y: -1.2
+##       z: 3.0
+##     orientation:
+##       x: 0.0
+##       y: 0.0
+##       z: 0.707
+##       w: 0.707
+##   model_name: "Yolov7"
+##   zoom: 1.5
+##   focus: true
+## logging_dir:
+## 예시 : /home/krm/krm_data/logs/{날짜}
+string file_path
+
+---
+# Result
+bool result          # false: failure, true: success 
+
+---
+# Feedback
+## Yaml 형태로 데이터가 제공될 것임. 수신하는 곳에서 deserialize 해야함.
+## 예제 데이터
+## feedback_msgs:
+##   camera_pose:
+##     position:
+##       x: 0.5
+##       y: -1.2
+##       z: 3.0
+##     orientation:
+##       x: 0.0
+##       y: 0.0
+##       z: 0.707
+##       w: 0.707
+##   zoom: 1.5
+string feedback_msgs

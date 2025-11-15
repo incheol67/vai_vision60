@@ -1,0 +1,9 @@
+float64 probability
+int64 xmin
+int64 ymin
+int64 xmax
+int64 ymax
+int16 id
+string object_class
+float64 z_istance_m
+float64 x_bearing_m

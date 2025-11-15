@@ -1,0 +1,6 @@
+# Send empty val [] to read
+ghost_manager_interfaces/Param param
+---
+bool result
+string result_str
+ghost_manager_interfaces/Param param

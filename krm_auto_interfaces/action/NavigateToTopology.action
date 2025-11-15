@@ -1,0 +1,19 @@
+# Goal
+int16[] goal_vertex_ids # 목표 되는 노드 id표
+string behavior_tree     # bt xml 뭘 사용 할 것인지 디폴트는 코드단에 존재
+int16 set_mission_mode  # 실외인지 실내인지 모드 설정
+int16 topology_map # 디폴트 존재, 임의의 토폴로지 맵 파일 삽입 가능
+---
+# Result
+bool result          # false: failure, true: success 
+
+---
+# Feedback
+geometry_msgs/PoseStamped current_pose
+builtin_interfaces/Duration navigation_time
+int16[] number_of_target_vertex_ids_remaining # 남은 목표 노드 수
+int16 current_target_vertex_id # 현재 목표 노드 id
+int16[] number_of_topology_vertices_remaining # 토폴로지 맵의 노드 수
+# 현재 목표로 하는 노드의 경로 정보
+int16 number_of_recoveries # recovery 횟수
+string current_target_vertex_behavior

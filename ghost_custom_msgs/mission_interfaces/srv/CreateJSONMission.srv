@@ -1,0 +1,5 @@
+# Request
+string json
+---
+# Return Value
+bool success
